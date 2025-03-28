@@ -1,0 +1,83 @@
+doctype html 
+html
+    head
+        title= titlePage 
+        link(rel='stylesheet',href="/css/style.css")
+        link(rel="stylesheet", href="style.css")
+    body 
+        //- img(src="/images/anhgau.jpg", alt="", width="200px")
+        //- h1= message
+        //- h1 Nội dung thẻ h1 
+        //- h2 Nội dung thẻ h2
+        //- p Nội dung thẻ p
+        //- img
+        //- ul 
+        //-     li item1
+        //-     li item2 
+        //-     li item3
+        //- table 
+        //-     thead 
+        //-         tr
+        //-             th STT
+        //-             th HoTen
+        //-             th SDT
+        //-     tbody 
+        //-         tr 
+        //-             td 1
+        //-             td Duong Duc Hieu
+        //-             td 68686868
+        //-         tr 
+        //-             td 2
+        //-             td Nguyen Thuy Ha Vy
+        //-             td 66668888
+        //- p Nội dung <b> thẻ p </b>!
+        //- p Nội dung <i> thẻ p </i>!
+        //- p Nội dung <b><i> thẻ p </i></b>!
+        //- button(class ="btn btn-succes" id="button-test") Click Me
+
+
+        //- - var fullName = "Duong Duc Hieu";
+        //- - var email = "hieudd@gmail.com";
+        //- div(class="info-user")
+        //-     p= fullName 
+        //-     p= email
+        //- - var htmlLink = "<a href='htpp'>Daca.vn</a>";
+        //- div(class="link")
+        //-     p= htmlLink;
+
+
+        //- - 
+        //-     var infoUser = {
+        //-         fullName: "Duong Duc Hieu",
+        //-         email: "hieu@gmail.com"
+        //-     };
+        //- p Họ tên: #{infoUser.fullName}
+        //- p Email:  #{infoUser.email}
+        //- if(infoUser.phone)
+        //-     p SDT:  infoUser.phone
+        //- else 
+        //-     p SDT: Chưa có
+        //- p SDT: #{infoUser.phone ? infoUser.phone : "Chưa có"}
+
+        //- -
+        //-     var listUser = [
+        //-         "Duong Duc Hieu",
+        //-         "Nguyen Ngoc Quan",
+        //-         "Nguyen Duc Long"
+        //-     ];
+        
+        //- ul 
+        //-     each  item, index in listUser 
+        //-         li #{index + 1} : #{item}
+
+        //- ul 
+        //-     - for(let i = 0; i < 10; i++)
+        //-         li #{i}
+
+        include ../partials/header.pug
+
+        block main
+
+        include ../partials/footer.pug
+
+        script(src="/js/script.js")

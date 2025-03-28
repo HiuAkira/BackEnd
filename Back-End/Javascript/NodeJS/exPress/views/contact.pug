@@ -1,0 +1,8 @@
+extend layouts/defaul.pug
+include mixins/box-head.pug
+block main
+    //- div(class="box-head")
+    //-     h1(class="inner-title") Trang liên hệ
+    //-     div(class="inner-desc") Đây là đoạn mô tả của liên hệ
+
+    +box-head("Trang liên hệ", "Đây là đoạn mô tả của trang liên hệ")

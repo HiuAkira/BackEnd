@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cách 1:
+    <button onclick ="alert('Anh Yêu Emmm <3')">
+        Click
+    </button> -->
+
+
+    <!-- Cách 2:
+    <button>
+        Click
+    </button>
+    <script>
+        var button = document.querySelector("button");
+        button.onclick = function(){
+            alert("Hello!");
+        }
+    </script> -->
+
+    <!-- Cách 3 là tạo 1 file scrip riêng -->
+    <button>
+        Click
+    </button>
+     <script src="script.js"></script>
+     <script src="script2.js"></script>
+</body>
+</html>

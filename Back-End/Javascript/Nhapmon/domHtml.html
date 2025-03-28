@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .tille{
+            color: pink;
+        }
+        #menu li a{
+            color: red;
+        }
+        #menu-2 li a{
+            color: orange;
+        }
+        .test-1{
+            color: red;
+        }
+        .test-2{
+            color: blue;
+        }
+        .ads{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            display: none;
+        }
+        .ads-display{
+            display: block;
+        }
+    </style>
+    <div id="ads-1" class = "ads">
+        <button id="close-ads">x</button>
+        <a href ="#" target="_blank">
+            <img scr="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/472533133_1313442586642156_1054081500382934389_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeF3z1eP12T54_LuR1D3fcwFkf8mDrh7sQ6R_yYOuHuxDvPD3klChTFKxGFjj9lbHkJeFLfYaT8z2PdeZGHumABF&_nc_ohc=CEJIKDg7OC0Q7kNvgGZx2uR&_nc_oc=AdhNWnPBstTPTsFIEQaCWe1Pn2p6k2KRRUcfRoBdVEQ8L13nYrrgNScViDXq_kFQpPc&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=AEHO7XGG6KtbnfGoroJLdTx&oh=00_AYAnjhPzV3GMdfdTOJd2GjnRymcb9q31470uRk9ldMsyCg&oe=67CB6350">
+            
+        </a>
+    </div>
+    <h2 id ="h2-01" class="test-1">Nội dung <b>01</b></h2>
+    <h2 id ="h2-02" >Nội dung 02</h2>
+    <h2 id ="h2-03" class ="tille">Nội dung 03</h2>
+
+    <h3 class ="tille">Nội dung thẻ h3</h3>
+    <h4 class ="tille">Nội dung thẻ h4</h4>
+
+    <ul id="menu">
+        <li>
+            <a href="#" class="link">Mục 1</a>
+        </li>
+        <li>
+            <a href="#" class="link">Mục 2</a>
+        </li>
+        <li>
+            <a href="#" class="link">Mục 3</a>
+        </li>
+    </ul>
+
+    <ul id="menu-2">
+        <li>
+            <a href="#">Mục 1</a>
+        </li>
+        <li>
+            <a href="#">Mục 2</a>
+        </li>
+        <li>
+            <a href="#">Mục 3</a>
+        </li>
+    </ul>
+    <script src="script5.js">
+        const ads1 = document.querySelector("#ads-1");
+        const closeAds = document.querySelector("#close-ads");
+        closeAds.onclick = () =>{
+            ads1.setAttribute("class", "d-none");
+        };
+        setTimeout(() =>{
+            ads1.setAttribute("class", "d-none");
+        }, 20000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    //     const div = document.createElement("div"); 
+    //     div.innerHTML=`
+    //         <div id="asd-1" class="ads tes1">
+    //             <button id="close-ads">X</button>
+    //             <a href="a" target="_blank">
+    //                 <img src="https://th.bing.com/th/id/OIP.iaYb7AyBkTya4ynXZf63mwHaH1?rs=1&pid=ImgDetMain"
+    //                 alt="" width="200px">
+    //             </a>
+    //         </div>
+    //     `;
+    //     document.querySelector("body").appendChild(div);
+    // const p = document.createElement("p");
+    // p.innerHTML = "Nội dung...";
+    // document.querySelector("body").appendChild(p);
+    </script> -->
+
+
+<!-- 
+     <ul id="menu">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <button id="button">Add</button> -->
+    <!-- <script>
+        const menu = document.querySelector("#menu");
+        const button = document.querySelector("#button");
+
+        let count = 1;
+
+
+        button.addEventListener("click", () => {
+            const li = document.createElement("li");
+            li.innerHTML="Item New";
+            menu.appendChild(li);
+        });
+    </script> -->
+
+
+    <!-- <script>
+        const menu = document.querySelector("#menu");
+        const button = document.querySelector("#button");
+        let count = 1;
+        button.addEventListener("click", () => {
+            const liFirst = menu.querySelector("li:nth-child(1)");
+            const li = document.createElement("li");
+            li.innerHTML="Item New " + count;
+            menu.insertBefore(li,liFirst);
+            count++;
+        });
+    </script> -->
+
+
+    <!-- <ul id="menu">
+        <li>1 <input /><button>X</button></li>
+        <li>2 <input /><button>X</button></li>
+        <li>3 <input /><button>X</button></li>
+    </ul>
+    <button id="button">Add</button> -->
+    <!-- <script>
+        const menu = document.querySelector("#menu");
+        const buttonsDelete = menu.querySelectorAll("button");
+        for (const buttonDelete of buttonsDelete) {
+            buttonDelete.addEventListener("click",(event) => {
+                menu.removeChild(event.target.parentNode);
+            });
+        }
+    </script> -->
+
+
+
+    <ul id="menu">
+        <li>1 <input value="Công việc 1"/><button>X</button></li>
+        <li>2 <input value="Công việc 2"/><button>X</button></li>
+        <li>3 <input value="Công việc 3"/><button>X</button></li>
+    </ul> 
+    <button id="button">Add</button>
+    <script>
+        const menu = document.querySelector("#menu");
+        const button = document.querySelector("#button");
+        button.addEventListener("click", () => {
+            const liSecond= menu.querySelector("li:nth-child(2)");
+            const li = document.createElement("li");
+            li.innerHTML = `
+                4 <input value = "Công việc 4" /><button>X</button>
+            `;
+            menu.replaceChild(li,liSecond);
+        });
+    </script>
+</body>
+</html>

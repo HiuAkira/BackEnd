@@ -1,0 +1,8 @@
+extend layouts/defaul.pug
+include mixins/box-head.pug
+block main
+    //- div(class="box-head")
+    //-     h1(class="inner-title") Trang chủ
+    //-     div(class="inner-desc") Đây là đoạn mô tả của trang chủ
+
+    +box-head("Trang chủ", "Đây là đoạn mô tả của trang chủ")

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box:nth-child(3){
+            color: red;
+        }
+    </style>
+    <div class="parent">
+        <div class="child-1" id ="child1">
+            <div class="box"> Box 1</div>
+            <div class="box"> Box 2</div>
+            <div class="box"> Box 3</div>
+        </div>
+        <div class="child-2">child2</div>
+        <div class="child-3">child2</div>
+    </div>
+    <script>
+        const child1 = document.querySelector("#child1");
+        console.log(child1);
+        // console.log(child1.parentNode); // truy cap vao ptu cha
+        // console.log(child1.childNodes); // truy cap vao cac ptu con
+        // console.log(child1.querySelector(".box:nth-child(3)"));
+        // console.log(child1.firstElementChild);
+        // console.log(child1.lastElementChild);
+        // console.log(child1.nextElementSibling);
+        // console.log(child1.previousElementSibling);
+    </script>
+    <!-- <script scr="script8.js"></script> -->
+</body>
+</html>

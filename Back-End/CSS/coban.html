@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- <style>
+        *{
+            text-align: center;
+        }
+        h1 {
+            color: red;
+        }
+        h2 {
+            color: purple;
+        }
+        #test-2{
+            color: pink;
+        }
+        .xet{
+            color: green;
+        }
+    </style>
+    <h1>Nội dung thẻ h1:</h1>
+    <h2 class="xet">Nội dung thẻ h2-1:</h2>
+    <h2 id="test-2">Nội dung thẻ h2-2:</h2>
+    <h2 class="xet">Nội dung thẻ h2-3:</h2>
+    <h3>Nội dung thẻ h3</h3>
+    <h4>Nội dung thẻ h4</h4>
+    <h5>Nội dung thẻ h5</h5> -->
+    <!-- <style>
+        .box{
+            border: 5px solid black;     
+            padding: 100px 20px 50px 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+    <div class="box">
+        box 1
+    </div>
+
+
+    <div class="box">
+        box 2
+    </div> -->
+    <!-- <style>
+        .text-1{
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .text-2{
+            text-align: right;
+            text-transform: lowercase;
+        }
+        .text-3{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .text-4{
+            text-align: justify;
+        }
+    </style>
+    <p class="text-1"><i class="fa-solid fa-phone"></i>
+        Nội dung 1</p>
+    <p class="text-2">Nội dung 2</p>
+    <p class="text-3">Nội dung 3</p>
+    <p class="text-4">Nội dung 4</p> -->
+
+
+    <!-- <style>
+        span{
+            background: yellow;
+            border: 2px solid black;
+        }
+
+        .block{
+            display: block;
+        }
+
+        .inlineblock{
+            display: inline-block;
+        }
+    </style>
+
+
+    <p>One day in the 1920’s, a young man asked if he could visit a woman at her home.<span class="inline1">Inline1</span>
+        <span class="inline2">Inline2</span>
+    When he arrived at her home, she was wearing a hat on her head. 
+    Many people today may not understand what this story means. But any American in the 1920’s would understand.
+    The hat said that the girl would like to go out with him. 
+    </p>
+
+
+    <p>One day in the 1920’s, a young man asked if he could visit a woman at her home.<span class="block">Inline1</span>
+        <span class="block">Inline2</span>
+    When he arrived at her home, she was wearing a hat on her head. 
+    Many people today may not understand what this story means. But any American in the 1920’s would understand.
+    The hat said that the girl would like to go out with him. 
+    </p>
+
+
+    <p>One day in the 1920’s, a young man asked if he could visit a woman at her home.<span class="inlineblock">Inline1</span>
+        <span class="inlineblock">Inline2</span>
+    When he arrived at her home, she was wearing a hat on her head. 
+    Many people today may not understand what this story means. But any American in the 1920’s would understand.
+    The hat said that the girl would like to go out with him. 
+    </p> -->
+
+
+
+    <!-- Phần 8 bộ chọn tổ hợp -->
+     <!-- <style>
+        /* div + p{
+            background: orange;
+        } */
+
+        /* div ~ p{
+            background: orange;
+        } */
+
+        /* div > p{
+            background: orange;
+        } */
+
+
+        div p{
+            background: orange;
+        }
+
+     </style>
+     <p>Nội dụng 1</p>
+     <div>
+        <p>Nội dung 2</p>
+        <p>Nội dung 3</p>
+
+        <section>
+            <p>Nội dung section 1</p>
+            <p>Nội dung section 2</p>
+
+            <article>
+                <p>Nội dung article 1</p>
+                <p>Nội dung article 2</p>
+            </article>
+        </section>
+     </div>
+     <p>Nội dung 4</p>
+     <h2>Nội dung thẻ h2</h2>
+     <p>Nội dung 5</p>
+     <p>Nội dung 6</p> -->
+
+
+
+     <!-- Phần 9: Vị trí -->
+     <style>
+        .box{
+            background: gray;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            font-size: 50px;
+            position: static;
+        }
+        /* .box-2{
+            background: orange;
+            position: relative;
+            top: 30px;
+            left: 20px;
+        } */
+         .box-3{
+            position: relative;
+         }
+         .box-4{
+            background: orange;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+         }
+
+         .header{
+            background: black;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+         }
+     </style>
+     <div class="header">header</div>
+     <!-- <div class="box">1</div>
+     <div class="box box-2">2</div> -->
+     <div class="box box-3">3
+        <div class="box-4">4</div>
+     </div>
+     
+     <p style="height: 1000px;">When he arrived at her home, she was wearing a hat on her head. 
+        Many people today may not understand what this story means. But any American in the 1920’s would understand.
+        The hat said that the girl would like to go out with him. </p>
+</body>
+</html>
