@@ -1,0 +1,6 @@
+module.exports.dashboard = (req, res) => {
+    // res.send("Trang tổng quan");
+    res.render("admin/pages/dashboard/index", {
+        pageTitle: "Trang tổng quan"
+    });
+};

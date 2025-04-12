@@ -1,0 +1,24 @@
+products.products 
+    doctype html
+        html(lang="vi")
+            head
+                meta(charset="UTF-8")
+                meta(name="viewport" content="width=device-width, initial-scale=1.0")
+                title Danh Sách Sản Phẩm
+                link(rel="stylesheet" href="style.css")
+            body
+                header
+                .logo DACA
+                nav.nav-links
+                    a(href="#") Trang chủ
+                    a(href="#") Sản phẩm
+
+                h2 Danh sách sản phẩm
+                .product-list
+                each product in products
+                    .product-card
+                    img(src=product.image alt=product.name)
+                    h3= product.name
+                    p.price #{product.price}$
+                    p.old-price #{product.old_price}$
+                    p.discount= product.discount
